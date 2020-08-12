@@ -1,15 +1,15 @@
-<div class="banner">
+<div class="banner border">
     <div nz-row nzAlign="bottom" nzJustify="space-between" class="max-width">
         <div nz-col nzSpan="8">
-            <h4>Welcome to {{bizInfo.shopName}} Shop</h4>
+            <span>欢迎来到 {{bizInfo.shopName}} 商城</span>
         </div>
         <div nz-col >
             <div *ngIf="user">
-    
+                <span>{{user.userName}}</span>
             </div>
             <div *ngIf="!user">
                 <i nz-icon nzType="user" nzTheme="outline"></i>
-                <a><span>Register</span></a><span>/</span><a><span>Sign in</span></a>
+                <a><span>注册</span></a><span>/</span><a><span>Sign in</span></a>
             </div>
         </div>
     </div>
