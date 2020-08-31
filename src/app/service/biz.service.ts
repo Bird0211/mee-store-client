@@ -23,7 +23,10 @@ export class BizService {
   loadBizInfo() {
     this.bizInfo = {
       id: 0,
-      shopName: 'Yiyun'
+      shopName: 'Yiyun',
+      logo: '/assets/images/Mee_logo.png',
+      color: '#90c73e',
+      shopImg: '/assets/images/shopImg.png'
     };
   }
 

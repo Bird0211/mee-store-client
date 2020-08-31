@@ -14,7 +14,8 @@ import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AntModule } from './ant/ant.module';
-
+import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { SimpyItemComponent } from './pages/simpy-item/simpy-item.component';
 
 registerLocaleData(zh);
 
@@ -23,7 +24,8 @@ registerLocaleData(zh);
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    IndexComponent
+    IndexComponent,
+    SimpyItemComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ registerLocaleData(zh);
     AntModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzSpaceModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]

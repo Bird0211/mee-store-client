@@ -1,11 +1,29 @@
 @import "../../../customer.less";
 .banner {
-    background-color: @system-color;
-    margin: auto;
-    height: 29px;
-    line-height: 29px;
+    background-color: #f2f2f2;
+    margin: auto 0;
+    height: 32px;
+    // line-height: 32px;
 }
 
+.searchbar {
+    margin: auto;
+    height: 110px;
+    // line-height: 110px;
+}
+
+.searchbar [nz-col] {
+    height: 100%;
+}
+
+.logo {
+    max-height: 80px;
+    // height: -webkit-fill-available;
+    display: block;
+    border-radius: 10px;
+    // width: 100%;
+    // height: 100%;
+}
 
 span {
     margin: 0 4px;
@@ -13,6 +31,60 @@ span {
     color: #333;
 }
 
+.hotkey {
+    font-size: 13px;
+    color: #143138;
+    overflow: hidden;
+    display: flex;
+}
+
 i {
     color: #333;
 }
+
+.menu-row {
+    line-height: 0px;
+}
+
+.menu {
+    background-color: @primary-color;
+    color: white;
+    height: 48px;
+}
+
+.menu span {
+    color: white;
+    font-size: 16px;
+}
+
+.menu span i {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.group {
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.group :hover {
+    color: @primary-color;
+}
+
+.topgroup {
+    height: 49px;
+}
+
+li {
+    font-size: 16px;
+}
+
+.menuitem :hover {
+    color: @primary-color;
+}
+
+.submenuItem {
+    color: #999;
+    font-size: 12px;
+}
+

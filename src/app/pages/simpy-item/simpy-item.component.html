@@ -1,0 +1,23 @@
+<div class="d-block pl-3 pr-3">
+    <div nz-row>
+        <div nz-col>
+            <a [routerLink]="['product/detail',item.id]">
+                <img class="w-100 border" [src]="item.image" />
+            </a>
+        </div>
+    </div>
+    <div nz-row>
+        <div nz-col>
+            <a [routerLink]="['product/detail',item.id]">
+                <span class="text-truncate">{{item.name}}</span>
+            </a>
+        </div>
+    </div>
+    <div nz-row>
+        <div nz-col class="text-center">
+            <span class="price">￥{{item.price}}</span>
+        </div>
+    </div>
+</div>
+
+
